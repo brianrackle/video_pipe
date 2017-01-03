@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": true,
+            "pythonPath": "${config.python.pythonPath}",
+            "program": "${file}",
+            "cwd": "${workspaceRoot}",
+            "debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit",
+                "RedirectOutput"
+            ],
+            "args": [
+                "--keyfile",
+                "/home/brian/rootkey.csv",
+                "--upload",
+                "/home/brian/rootkey.csv",
+                "--name",
+                "rootkey.csv",
+                "--bucket",
+                "rackle.video.staging"
+            ]
+        }
+    ]
+}
